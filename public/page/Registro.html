@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Validación de Formulario con Javascript</title>
+	<link rel="stylesheet" href="../styles/Style-Registro.css">
+	
+</head>
+<body>
+	<main>
+		<form action="/validar" class="formulario" id="formulario" method="post">
+			<!-- Grupo: Nombre -->
+			<div class="formulario__grupo" id="grupo__nombres">
+				<label for="usuario" class="formulario__label">Nombres</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombres" id="nombres" placeholder="nombres">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">En este campo solo puede introducir letras</p>
+			</div>
+
+			<!-- Grupo: Apellidos -->
+			<div class="formulario__grupo" id="grupo__apellidos">
+				<label for="apellidos" class="formulario__label">Apellidos</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="apellidos" id="apellidos"
+						placeholder="Apellidos">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">En este campo solo puede introducir letras</p>
+			</div>
+
+			<!-- Grupo: Fecha de Nacimiento -->
+			<div class="formulario__grupo" id="grupo__Fecha__Nacimiento">
+				<label for="fecha_nacimiento" class="formulario__label">Fecha de Nacimiento</label>
+				<div class="formulario__grupo-input">
+					<input type="date" class="formulario__input" name="fecha_nacimiento" id="fecha_nacimiento">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+			</div>
+
+			<!-- Grupo: Genero -->
+			<div class="formulario__grupo" id="grupo__genero">
+				<label for="genero" class="formulario__label">Genero</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="Genero" id="genero">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Coloco su genero de manera correcta</p>
+			</div>
+
+			<!-- Grupo: Documento de identidad -->
+			<div class="formulario__grupo" id="grupo__documento__identidad">
+				<label for="documento__identidad" class="formulario__label">Número de Identificación
+					(DNI/Pasaporte)</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="documento_Identidad_student" id="documento_Identidad_student"
+						placeholder="Número de Identificación">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El documento solo contiene numeros</p>
+			</div>
+
+			<!-- Grupo: Teléfono -->
+			<div class="formulario__grupo" id="grupo__telefono">
+				<label for="telefono" class="formulario__label">Teléfono</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="123456789">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.
+				</p>
+			</div>
+
+
+			<!-- Grupo: Correo -->
+
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electronico</label>
+				<div class="formulario__grupo-input">
+					<input type="" class="formulario__input" name="correo" id="correo"
+						placeholder="HolaMundo@Javascript.com">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Introduzca su correo</p>
+			</div>
+
+			<!-- Grupo: Grado al que se Postula: -->
+
+			<div class="formulario__grupo" id="grupo__postular">
+				<label for="postular" class="formulario__label">Grado al que se Postula</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="postular" id="postular"
+						placeholder="Grado">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Coloco su Grado de manera correcta</p>
+			</div>
+
+			<!-- Grupo: Correo -->
+
+			<div class="formulario__grupo" id="grupo__Colegio__Anterior">
+				<label for="Colegio__Anterior" class="formulario__label">Nombre del Colegio Anterior</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="Colegio__Anterior" id="Colegio__Anterior"
+						placeholder="Colegio Anterior">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Coloque de manera correcta su Colegio Anterior</p>
+			</div>
+
+
+			<!-- Grupo: Nombres del Padre/Madre/Tutor-->
+			<div class="formulario__grupo" id="grupo__tutor__nombre">
+				<label for="tutor_nombre" class="formulario__label">Nombres Del Padre/Madre/Tutor</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="tutor_nombre" id="tutor_nombre"
+						placeholder="Nombres del Tutor">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">En este campo solo puede introducir letras</p>
+			</div>
+
+			<!-- Grupo: Apellidos del Padre/Madre/Tutor-->
+			<div class="formulario__grupo" id="grupo__tutor__apellido">
+				<label for="tutor_apellido" class="formulario__label">Apellidos Del Padre/Madre/Tutor</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="tutor_apellido" id="tutor_apellido"
+						placeholder="Apellidos Tutor">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">En este campo solo puede introducir letras</p>
+			</div>
+
+			<!-- Grupo: Documento-->
+
+
+			<!-- Grupo: Número de Identificación (DNI/Pasaporte): del Padre/Madre/Tutor-->
+			<div class="formulario__grupo" id="grupo__tutor__numero_identificacion">
+				<label for="tutor_numero_identificacion" class="formulario__label">Número de Identificación
+					(DNI/Pasaporte):</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="tutor__numero_identificacion" id="tutor__numero_identificacion"
+						placeholder="Número de Identificación Tutor">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">En este campo solo puede introducir letras</p>
+			</div>
+
+
+			<!-- Grupo: Terminos y Condiciones -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario
+					correctamente.</p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn" id="boton__registrar">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+		</form>
+	</main>
+
+	<script src="/public/JS/verificacion.js"></script>
+
+</body>
+
+</html>

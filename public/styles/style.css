@@ -1,0 +1,218 @@
+*,
+*::before,
+*::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+
+}
+.logo-principal{
+    height: 80px;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+.welcome img{
+    height: 70px;
+}
+.welcome{
+    position: relative;
+    top: 100px;
+    border: 1px solid black;
+    display: inline-flexbox;
+    text-align: center;
+    align-items: center;
+    padding: 7px;
+}
+
+.container {
+    height: 855px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    top: 100px; 
+    overflow:hidden;
+
+}
+.container  img {
+    width: 100%;
+    height: 55em;
+/*	object-fit: cover; /esto es para que no se disporcione la imagen pero en mi caso al usar esto se me recorta la imagen*/ 
+	cursor: pointer;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+.logo .name-school{
+    font-size: 25px;
+    margin-left: 10px;
+}
+.logo .header-main{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(1, 1, 1, 0.7);
+    padding: 0px 30px; /* aca le estamos dando un relleno a todo el header*/
+    display: flex;   /* aca estamos haceindo flexible la imagen osea el logo y el h1 que seria victoria barcia*/
+    align-items: center;    /* aca estamos centrando los ul li ul li osea las listas */
+    justify-content: space-between;
+    z-index: 1000; /* aca hacemos que al desplegar la barra de navegacion no se quede atras de lo siguiente contenido que */
+    
+}
+.logo {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+}
+.navigation ul {
+    list-style: none;
+}
+.header .navigation ul li{
+    float: left;
+    position: relative;
+    
+}
+.header .navigation ul li a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    transition: all .2s ease;
+}
+.header .navigation ul li a:hover{
+    background-color: aquamarine;
+}
+.header .navigation ul li ul{
+    position: absolute;
+    right: 0;
+    width: 300px;
+    background-color: rgba(1, 1, 1, 0.7);
+    display: none;
+}
+.header .navigation ul li ul li a{
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.header .navigation ul li ul li ul{
+    position: absolute;
+    top: 0;
+    right: 300px;
+}
+.header .navigation ul li ul li{
+    width: 100%;
+
+}
+.header .navigation ul li:hover> ul{
+    display: initial;
+}
+#toggle,
+.header table{
+    display: none;
+    cursor: pointer;
+}
+.menu{
+    width: 0px;
+    height: 0px;
+}
+.hero{
+    min-height: 100vh;
+}
+
+/*Aca empezamos a trabajar un formulario*/
+.seccion-contactanos{
+    position: relative;
+    top: 100px;
+}
+.seccion-contactanos h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 45px;
+}
+.seccion-contactanos .datos{
+    text-align:center ;
+    padding: 10px;
+}
+
+#Nombres{
+    display: inline-block;
+    margin-right: 100px;
+}
+#Apellidos{
+    display: inline-block;
+}
+
+
+
+/*Crear mi responsive tipo burger*/
+  
+.menu-toggle {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-icon span {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    border-radius: 3px;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: flex;
+    }
+  
+    #navbar {
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      padding-top: 20px;
+    }
+  
+    #navbar.active {
+      display: flex;
+    }
+  
+    #navbar ul {
+      margin-top: 20px;
+    }
+  
+    #navbar li {
+      margin: 10px 0;
+    }
+  
+    .search-bar {
+      margin-top: 20px;
+    }
+  
+    .menu-toggle:checked + .menu-icon span:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .menu-toggle:checked + .menu-icon span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu-toggle:checked + .menu-icon span:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+  

@@ -1,0 +1,19 @@
+.marquee {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    padding: 3px 80px;
+    background-color: rgba(33, 32, 32, 0.712);
+    color: #000000;
+    border-radius: 8px;
+}
+  
+  .marquee .event-name {
+    font-weight: bold; /* Hace que el nombre del evento sea más llamativo */
+    font-size: 20px; /* Tamaño de fuente del nombre del evento, aumentado */
+    margin-bottom: 8px; /* Espacio entre el nombre del evento y la fecha, aumentado */
+  }
+  
+  .marquee .event-date {
+    font-size: 18px; /* Tamaño de fuente más grande para la fecha */
+  }

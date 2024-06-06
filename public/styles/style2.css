@@ -1,0 +1,73 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.Welcome-index2 h2{
+    position: relative;
+    top: 100px;
+    height: 100px;
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    padding-left: 10px;
+}
+.nuestro-colegio {
+    color: black;
+    border: 1px solid black;
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.nuestro-colegio .num2{
+    font-size: 30px;
+
+}
+.imagen-directora{
+    text-align: center;
+}
+.nuestro-colegio-index2 {
+    width: 55%;
+}
+.nuestro-colegio .img-direct{
+    height: 230px;
+    width: 75%;
+
+}
+.directora-and-cargo{
+    margin-top: 15px;
+}
+/*ahora el footer lode arriba es todo sobre el tema de bienvenida y las fotos*/
+
+.footer{
+    position: relative;
+    top: 100px;
+    border: 1px solid black;
+}
+
+/*FULL RESPONSIVE*/
+@media(max-width:950px){
+    .Welcome-index2{
+        position: relative;
+        top: 37px;
+        
+    }
+    .nuestro-colegio{
+        display: flex;
+        top: 138px;
+        display: inline-block;
+
+    }
+    .nuestro-colegio-index2{
+        width: 100vw;
+        padding: 25px;
+    }
+    .imagen-directora{
+        margin-top: 30px;
+    }
+
+}
